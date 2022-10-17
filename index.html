@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://icons8.com/" />
+    <link rel="stylesheet" href="https://ionic.io/ionicons" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+    />
+    <!--create links to sites that will be used to implement fonts, svgs, imgs and jpgs. 
+        We do this by using them as stylesheets to our html and css docs-->
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" -25, "opsz" 48;
+      }
+    </style>
+    <!--set values to be used when importing objects to our file-->
+  </head>
+  <body>
+    <!--implement a header class for the sidebar as it runs from top of page 
+        to the bottom. put the spotify logo and text at the top.-->
+    <header>
+      <div class="spotifylogo">
+        <img src="assets/img/logo-small.svg" alt="spotifylogo" />
+        <div class="spotifyname">Spotify</div>
+        <!--assign class for the images and menu selections to go into. Attach images by 
+            using saved images. use an unordered list to have the items display vertically
+            in the grid area-->
+        <div class="homebar">
+          <ul>
+            <li>
+              <img src="assets/img/home.svg" alt="homepic" /><span>Home</span>
+            </li>
+            <li>
+              <img src="assets/img/search.svg" alt="searchpic" /><span
+                >Search</span
+              >
+            </li>
+            <li>
+              <img src="assets/img/libreria.svg" alt="librarypic" /><span
+                >Library</span
+              >
+            </li>
+          </ul>
+        </div>
+        <!--create another class for the other menu items-->
+        <div class="playlist">
+          <div class="playlistTitle">Playlist</div>
+          <div class="createplaylist">
+            <!--attach images by referencing google fonts-->
+            <span class="material-symbols-outlined" alt="plus">add_box</span>
+            <!--use span to show text next to image-->
+            <span>Create Playlist</span>
+          </div>
+        </div>
+        <!--use an unordered list to display the text for blank playlists-->
+        <div class="blankplaylist">
+          <ul>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+            <li>Name Playlist</li>
+          </ul>
+        </div>
+      </div>
+      <!--attach images via google fonts for bottom of the header-->
+      <div class="install">
+        <!--create a new class for the line that goes between the next 2 inputs-->
+        <span class="material-symbols-outlined"> download_for_offline </span><span>Install App</span>
+      </div>
+      <div class="line"></div>
+
+      <div class="userpic">
+        <span class="material-symbols-outlined">person</span
+        ><span>Martin Lynch</span>
+      </div>
+    </header>
+
+    <main>
+        <!--create a class for the banner that goes across the top of the page-->
+      <div class="headBar">
+        <div class="userImg">
+            <!--use saved images for the profile item at top right of the page-->
+          <img src="assets/img/profile.svg" alt="profileImage" /><span
+            >Martin Lynch</span
+          >
+        </div>
+      </div>
+      <!--create a class for the list that goes across the artist selection area-->
+      <div class="topmenu">
+        <h2>Podcasts</h2>
+        <h2>Classification</h2>
+        <h2>Top Rated</h2>
+      </div>
+      <!--Create a class that displays the title of the selection area-->
+      <div class="recentPlayed">
+        <h2>Recently Played</h2>
+        <!--create a class for the cards that will be containing images and text. Insert
+             images and text into them-->
+        <div class="cards">
+          <div class="musicImgs">
+            <img src="assets/img/aquietplace.jpeg" alt="aquietplace" />
+            <p>A Quiet Place</p>
+            <div class="subs">Subtitle</div>
+          </div>
+          <div class="musicImgs">
+            <img src="/assets/img/cure.jpeg" alt="cure" />
+            <p>A Cure For Wellness</p>
+            <div class="subs">Subtitle</div>
+          </div>
+          <div class="musicImgs">
+            <img src="/assets/img/metal_lifting.jpg" alt="metal" />
+            <p>Heavy Metal</p>
+            <div class="subs">Subtitle</div>
+          </div>
+          <div class="musicImgs">
+            <img src="/assets/img/stranger.jpeg" alt="strangerThings" />
+            <p>
+              Stranger Things, Vol 1 (a Netflix Origional Series Soundtrack)
+            </p>
+            <div class="subs">Kyle Dixon & Michael</div>
+          </div>
+          <div class="musicImgs">
+            <img src="/assets/img/sinister.jpeg" alt="sinister" />
+            <p>Sinister</p>
+            <div class="subs">Subtitle</div>
+          </div>
+          <div class="musicImgs">
+            <img src="/assets/img/split.jpeg" alt="split" />
+            <p>Split</p>
+            <div class="subs">Subtitle</div>
+          </div>
+        </div>
+      </div>
+      <!--create a class for the next area containing more artist and text cards-->
+      <div class="epsForyou">
+        <h2>Episodes for Martin Lynch</h2>
+        <div class="musicImgs">
+          <img src="/assets/img/einaudi.jpeg" alt="einaudi" />
+          <p>Einaudi</p>
+          <div class="subs">Subtitle</div>
+        </div>
+        <div class="musicImgs">
+          <img src="/assets/img/radar.jpeg" alt="radar" />
+          <p>Release Radar</p>
+          <div class="subs">Subtitle</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <!--create another class for the different areas of the footer. In this case the left section-->
+      <div class="footleft">
+        <img src="/assets/img/aquietplace.jpeg" alt="aquietplace" />
+        <div class="currentlyPlaying">
+          <div>A Quiet Place</div>
+          <div class="artist">Artist Name</div>
+        </div>
+        <!--create a class to contain images to the right of the previous section. All 
+        following images obtained via goodle fonts-->
+        <div class="button">
+          <span class="material-symbols-outlined">favorite</span>
+
+          <span class="material-symbols-outlined">folder</span>
+        </div>
+      </div>
+      <!--create a class for the middle of the footer-->
+      <div class="footermiddle">
+        <div class="playingnowpic">
+           <!--attach images via google--> 
+          <span class="material-symbols-outlined">shuffle</span>
+          <span class="material-symbols-outlined">fast_rewind</span>
+          <span class="material-symbols-outlined">play_circle</span>
+          <span class="material-symbols-outlined">fast_forward</span>
+          <span class="material-symbols-outlined">replay</span>
+        </div>
+
+        <div class="progress">
+          <div class="time">0:38</div>
+          <div class="progressbar"></div>
+          <div class="time">3:56</div>
+        </div>
+      </div>
+      <!--create a class for the right of the footer-->
+      <div class="footerright">
+        <span class="material-symbols-outlined">lyrics</span>
+        <span class="material-symbols-outlined">queue_music</span>
+        <span class="material-symbols-outlined">computer</span>
+        <span class="material-symbols-outlined">volume_up</span>
+        </div>
+      <!--close footer section-->
+    </footer>
+  </body>
 </html>
